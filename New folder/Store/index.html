@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set document character set -->
+    <meta charset="UTF-8">
+    <!-- Ensure proper rendering and touch zooming on mobile devices -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Define the viewport to control layout and scaling on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Shop</title>
+    <!-- Linking external stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body class="">
+
+    <!-- Banner section containing navigation -->
+    <div class="banner">
+        <nav>
+            <!-- Website logo -->
+            <div class="logo"><span>EDU</span> AID<b>.</b></div>
+            <!-- Navigation links -->
+            <ul class="navitems">
+                <li class="current_page"><a href="">Home</a></li>
+                <li class="current_page"><a href="">Feedback</a></li>
+                <li class="active_page"><a href="">Shop</a></li>
+                <li class="current_page"><a href="intro.html">Profile</a></li>
+                <li class="current_page"><a href="">Site Map</a></li>
+                <li class="current_page"><a href="about.html">About Us</a></li>
+                <li class="current_page"><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Animated text section -->
+    <div class="waviy">
+        <span style="--i:1" id="span1">Donate</span>
+        <span style="--i:2">BY</span>
+        <span style="--i:3">purchasing</span>
+    </div>
+    
+    <!-- Main content container -->
+    <div class="container">
+        <header>
+            <!-- Title for shopping cart -->
+            <h1>Your Shopping Cart</h1>
+            <!-- Shopping cart icon and quantity indicator -->
+            <div class="shopping">
+                <img src="image/cart.png" alt="image">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <!-- Empty div to display shopping cart items -->
+        <div class="list"></div>
+    </div>
+
+    <!-- Shopping cart display section -->
+    <div class="cart">
+        <!-- Title for shopping cart -->
+        <h1>CART</h1>
+        <!-- Total price of items in the cart -->
+        <div class="total">0</div>   
+        <!-- List to display items in the cart -->
+        <ul class="listCart">
+        </ul>
+        
+        <!-- Buttons for proceeding with checkout or closing the shopping cart -->
+        <div class="checkOut">
+            <button class="proceed">Proceed</button>
+            <button class="closeShopping">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <!-- About Us section -->
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>We are dedicated to providing educational resources to those in need. Your donations help us reach more students and educators around the world.</p>
+                </div><br>
+                <!-- Contact Us section -->
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@educationaldonations.org</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Address: 123 Main Street, City, Country</p>
+                </div>
+            </div>
+            <!-- Social media icons -->
+            <div class="image">
+              <img src="image/facebook-square-logo-24.png" alt="facebook">
+              <img src="image/instagram-logo-24.png" alt="instagram">
+              <img src="image/whatsapp-square-logo-24.png" alt="whatsapp">
+              <img src="image/gmail-logo-24.png" alt="gmail">
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Copyright information -->
+                <div class="col-md-6">
+                    <p>&copy; 2024 Educational Donations. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>

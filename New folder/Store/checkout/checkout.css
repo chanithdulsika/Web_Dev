@@ -1,0 +1,44 @@
+body{
+    background-color: lightblue;
+    
+}
+.text{
+    padding-left:65px ;
+}
+.form{
+   padding-left: 500px;
+}
+
+.group{
+    background-color: whitesmoke;
+    width: 300px;
+    border: 1px solid blue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.name{
+    text-align: center;
+    height: 20px;
+    margin-top: 13px;
+
+}
+.address{
+    padding-right: 10px;
+}
+
+.group button{
+    width: 100px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.group button:hover{
+    background-color: yellow;
+    transition: 0.5s;
+    border-radius: 10px;
+}

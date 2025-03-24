@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.waviy {
+    position: absolute;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    background-color: gray;
+    align-self: center;
+    margin-top: -150px;
+  }
+  
+  .waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+  }
+
+  #span1{
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 85px;
+  }
+  
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+}
+
+
+body{
+    background-color:gray;
+    font-family: system-ui;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+header{
+    display: grid;
+    grid-template-columns: 2fr 30px;
+    margin-top: 250px;
+}
+header .shopping{
+    position: fixed;
+    margin-left: 1100px;
+    margin-top: -135px;
+    text-align: right;
+    cursor: pointer;
+}
+header .shopping:hover{
+    transform: scale(1.15);
+    transition-duration: 0.5s;
+}
+header .shopping img{
+    width: 40px;
+}
+header .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+    margin-left: -60px;
+}
+.list .item{
+    background-color: whitesmoke;
+    border: 1px solid lightskyblue;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+.list .item:hover{
+    transform: scale(1.15);
+    transition-duration: 0.5s;
+}
+.list .item img{
+    width: 220px;
+    height: 220px;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+}
+.list .item button{
+    width: 90px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: lightgreen;
+    font-weight: bold;
+}
+.list .item button:hover{
+    background-color: blueviolet;
+    transform: scale(1.15);
+    transition-duration: 1s;
+    border-radius: 35px;
+}
+
+.cart{
+    position: fixed;
+    overflow-y: auto;
+    top:0;
+    left: 100%;
+    width: 480px;
+    background-color: whitesmoke;
+    border: 2px solid blue;
+    border-radius: 25px;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 1000;
+}
+.active .cart{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.cart h1{
+    color: blueviolet;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.cart .total{
+    position: fixed;
+    color: black;
+    margin-top: 475px;
+    margin-left: 210px;
+    font-size: 35px;
+
+}
+.cart .checkOut{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.cart .checkOut .proceed{
+    background-color: yellow;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin-right: -80px;
+    
+}
+.cart .checkOut .proceed:hover{
+    background-color: aqua;
+    transition-duration: 1s;
+    border-radius: 35px;
+}
+.cart .checkOut .closeShopping{
+    position: absolute ;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 325px;
+    
+}
+.cart .checkOut .closeShopping:hover{
+    background-color: red;
+    transition-duration: 1s;
+    border-radius: 35px;
+}
+.cart .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color:black;
+}
+.listCart li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color:black;
+    row-gap: 10px;
+}
+.listCart li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCart li img{
+    width: 90%;
+}
+
+.listCart .count{
+    margin: 10px;
+    
+}
